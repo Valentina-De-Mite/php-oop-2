@@ -20,32 +20,37 @@ function __construct($_category, $_image, $_title, $_price, $_icon, $_type )
 
 }
 
-  public function getCategory{
+  public function getCategory(){
     return $this->category;
     
   }
 
-  public function getImage{
+  public function getImage()
+  {
     return $this->image;
     
   }
 
-  public function getTitle{
+  public function getTitle()
+  {
     return $this->title;
     
   }
 
-  public function getPrice{
+  public function getPrice()
+  {
     return $this->price;
     
   }
 
-  public function getIcon{
+  public function getIcon()
+  {
     return $this->icon;
     
   }
 
-  public function getType{
+  public function getType()
+  {
     return $this->type;
     
   }

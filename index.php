@@ -6,3 +6,23 @@ Stampiamo delle card contenenti i dettagli dei prodotti, come immagine, titolo, 
 Bonus (non opzionale):
 organizzate il progetto come visto stamattina a lezione usando varie sottocartelle per inserire classi, layout e dati. 
 -->
+
+
+
+<?php
+
+include __DIR__ . '/Models/classProduct.php';
+include __DIR__ . '/db.php';
+
+var_dump($products)
+
+
+
+
+
+?>
+
+
+
+
+
