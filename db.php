@@ -20,7 +20,7 @@ $products = [];
 
     $cuccia_cane = new Product("per Cane", "./assets/images/cuccia cane.webp", "'Cuccia per Cane'", "27,50 Euro", "./assets/images/icon_dog.jpg", "'Riposo'" ),
 
-    $gioco_gatto = new Product("Gatto", "./assets/images/pallina-gatto.jpg", "'Gioco per Gatto'", "2,50 Euro", "./assets/images/icon_cat.jpg", "Giocattoli" ),
+    $gioco_gatto = new Product("Gatto", "./assets/images/pallina-gatto.jpg", "'Gioco per Gatto'", "2,50 Euro", "./assets/images/icon_cat.jpg", "'Giocattoli'" ),
 
     $gioco_cane = new Product("Cane", "./assets/images/gioco cane.webp", "'Gioco per Cane'", "7,50 Euro", "./assets/images/icon_dog.jpg", "'Giocattoli'" ),
     
