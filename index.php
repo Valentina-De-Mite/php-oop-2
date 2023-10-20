@@ -17,9 +17,6 @@ include __DIR__ . '/db.php';
 
 
 
-
-
-
 ?>
 
 
@@ -32,7 +29,7 @@ include __DIR__ . '/db.php';
 
     <style>
         .logo{
-            width: 100px;
+            width: 120px;
             border-radius: 50px;
 
         }
@@ -48,7 +45,7 @@ include __DIR__ . '/db.php';
 <header>
     <nav class="navbar navbar-expand-sm  shadow">
           <div class="container">
-            <img src="./assets/images/logo.png" class="logo" alt="logo" srcset="">
+            <img src="./assets/images/logo.png" class="logo me-5" alt="logo" srcset="">
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -71,7 +68,7 @@ include __DIR__ . '/db.php';
                 </ul>
                 <form class="d-flex my-2 my-lg-0">
                     <input class="form-control me-sm-2" type="text" placeholder="Cerca un prodotto">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cerca</button>
+                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Cerca</button>
                 </form>
             </div>
       </div>
@@ -79,6 +76,38 @@ include __DIR__ . '/db.php';
     
 </header>
 
+<main>
+
+<div class="container">
+    <div class="row">
+        <?php foreach ($products as $product) : ?>
+
+
+            <div class="col-4">
+            <div class="card p-3 d-flex mt-5 shadow">
+                            <!-- <img src="./assets/images/icon_cat.jpg" alt="" srcset=""> -->
+                            <img src=" <?= $product->getImage()?>" class="img-fluid mb-3" alt="" srcset="">
+                            <div class="d-flex align-items-center">
+                            <p>Categoria: <?= $product->getCategory() ?></p>
+                            <img src="<?= $product->getIcon()?>" alt="" class="w-25" srcset="">
+                            </div>
+                            
+                            <p>Prodotto: <?= $product->getTitle() ?></p>
+                            
+                            <p>Costo: <?= $product->getPrice() ?></p>
+                        
+                            <p>Tipologia: <?= $product->getType() ?></p>
+                            
+                        </div> 
+            </div>
+    
+        <?php endforeach; ?>
+    </div>
+</div>
+
+
+
+</main>
 
 
 
